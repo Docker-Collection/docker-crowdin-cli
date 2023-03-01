@@ -1,1 +1,3 @@
-# docker-crowdin-cli
+# Docker Crowdin CLI
+
+Crowdin cli but support ARM!
