@@ -29,3 +29,15 @@ jobs:
       docker_label_description: "Crowdin CLI, MultiArch"
       version_detecter: true
       version_detecter_var: "CROWDIN_VERSION="
+
+  docker_action:
+    name: docker build (action)
+    needs: [ "docker" ]
+    uses: Docker-Collection/reusable-workflows/.github/workflows/docker-build.yml@main
+    with:
+      docker_name: "ghcr.io/docker-collection/crowdin-action"
+      context: "crowdin-action/"
+      dockerfile: "crowdin-action/Dockerfile"
+      docker_label_author: "Efina"
+      docker_label_title: "Docker Crowdin CLI Action"
+      docker_label_description: "Crowdin CLI, MultiArch"
