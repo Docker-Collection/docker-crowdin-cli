@@ -13,7 +13,7 @@ RUN apk add --no-cache wget unzip && \
     chmod +x crowdin && \
     mv ${CROWDIN_VERSION}/crowdin-cli.jar .
 
-FROM eclipse-temurin:17-jre-alpine
+FROM eclipse-temurin:17.0.6_10-jre-ubi9-minimal
 
 WORKDIR /usr/crowdin-project
 
