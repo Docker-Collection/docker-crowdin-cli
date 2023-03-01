@@ -5,4 +5,4 @@ RUN apt-get update && \
     curl -o entrypoint.sh https://raw.githubusercontent.com/crowdin/github-action/master/entrypoint.sh && \
     chmod +x entrypoint.sh
 
-ENTRYPOINT ["/entrypoint.sh"]
+ENTRYPOINT [ "/usr/crowdin-project/entrypoint.sh" ]
