@@ -1,4 +1,4 @@
-FROM crowdin:cli
+FROM ghcr.io/docker-collection/crowdin-cli:latest
 
 RUN apt-get update && \
     apt-get install -y curl git git-lfs jq gnupg && \
