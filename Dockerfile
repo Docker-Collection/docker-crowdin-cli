@@ -13,7 +13,7 @@ RUN apk add --no-cache wget unzip && \
     chmod +x crowdin && \
     mv ${CROWDIN_VERSION}/crowdin-cli.jar .
 
-FROM ibm-semeru-runtimes:open-17-jre-jammy@sha256:ca3f1d1debfc18acebd79acb61e93602201a95b064071205680aca47c60d122a
+FROM ibm-semeru-runtimes:open-17-jre-jammy@sha256:78d3d94f5714c23067e5a2a3d52897b9c7dfc9df96ea1077326b0afc4402265e
 
 WORKDIR /usr/crowdin-project
 
