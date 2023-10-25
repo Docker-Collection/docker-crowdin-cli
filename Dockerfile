@@ -5,7 +5,7 @@ WORKDIR /workdir
 COPY crowdin_script.sh ./crowdin
 
 # renovate: datasource=github-releases depName=crowdin/crowdin-cli
-ARG CROWDIN_VERSION=3.14.0
+ARG CROWDIN_VERSION=3.15.0
 
 RUN apk add --no-cache wget unzip && \
     wget https://github.com/crowdin/crowdin-cli/releases/download/${CROWDIN_VERSION}/crowdin-cli.zip && \
